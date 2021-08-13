@@ -1,0 +1,143 @@
+<div class="documentation__ReadMeCard-yjd3zs-9 bEuoNZ">
+    <div class="Readme__MarkdownContainer-s8l4ky-0 hCEzKD">
+        <div class="markdown-body">
+            <h1 id="jointjs---javascript-diagramming-library"><a aria-hidden="true"
+                    href="#jointjs---javascript-diagramming-library"><span
+                        class="icon markdown-icon-link"></span></a>JointJS - JavaScript diagramming library</h1>
+            <p><a href="https://travis-ci.com/clientIO/joint" target="_blank" rel="nofollow noopener"><img
+                        src="https://travis-ci.com/clientIO/joint.svg?branch=master" alt="Build Status"></a>
+                <a href="https://lgtm.com/projects/g/clientIO/joint/context:javascript" target="_blank"
+                    rel="nofollow noopener"><img
+                        src="https://img.shields.io/lgtm/grade/javascript/g/clientIO/joint.svg?logo=lgtm&amp;logoWidth=18"
+                        alt="Code Quality: Javascript"></a>
+                <a href="https://lgtm.com/projects/g/clientIO/joint/alerts" target="_blank" rel="nofollow noopener"><img
+                        src="https://img.shields.io/lgtm/alerts/g/clientIO/joint.svg?logo=lgtm&amp;logoWidth=18"
+                        alt="Total Alerts"></a></p>
+            <p>JointJS is a JavaScript diagramming library. It can be used to create either static diagrams or, and more
+                importantly, fully interactive diagramming tools and application builders.</p>
+            <p>Please see <a href="http://jointjs.com" target="_blank" rel="nofollow noopener">http://jointjs.com</a>
+                for more information, demos and documentation.</p>
+            <p>Or check out our <a href="https://resources.jointjs.com/mmap/joint.html" target="_blank"
+                    rel="nofollow noopener">mind-map documentation</a>.</p>
+            <h2 id="features"><a aria-hidden="true" href="#features"><span
+                        class="icon markdown-icon-link"></span></a>Features</h2>
+            <ul>
+                <li>basic diagram elements (rect, circle, ellipse, text, image, path)</li>
+                <li>ready-to-use diagram elements of well-known diagrams (ERD, Org chart, FSA, UML, PN, DEVS, ...)</li>
+                <li>custom diagram elements based on SVG or programmatically rendered</li>
+                <li>interactive elements and links</li>
+                <li>connecting diagram elements with links or links with links</li>
+                <li>customizable links, their arrowheads and labels</li>
+                <li>links smoothing (bezier interpolation)</li>
+                <li>magnets (link connection points) can be placed basically anywhere</li>
+                <li>hierarchical diagrams</li>
+                <li>serialization/deserialization to/from JSON format</li>
+                <li>highly event driven - you can react on any event that happens inside the paper</li>
+                <li>zoom in/out</li>
+                <li>touch support</li>
+                <li>plugin awareness</li>
+                <li>MVC architecture</li>
+                <li>... a lot more</li>
+            </ul>
+            <h2 id="supported-browsers"><a aria-hidden="true" href="#supported-browsers"><span
+                        class="icon markdown-icon-link"></span></a>Supported browsers</h2>
+            <ul>
+                <li>Latest Google Chrome (including mobile)</li>
+                <li>Latest Firefox</li>
+                <li>Latest Safari (including mobile)</li>
+                <li>Latest MSEdge</li>
+                <li>Latest Opera</li>
+                <li>IE 11</li>
+                <li>PhantomJS</li>
+            </ul>
+            <p>Any problem with JointJS in the above browsers should be reported as a bug in JointJS.</p>
+            <h2 id="development-environment"><a aria-hidden="true" href="#development-environment"><span
+                        class="icon markdown-icon-link"></span></a>Development Environment</h2>
+            <p>If you want to work on JointJS locally, use the following guidelines to get started.</p>
+            <h3 id="dependencies"><a aria-hidden="true" href="#dependencies"><span
+                        class="icon markdown-icon-link"></span></a>Dependencies</h3>
+            <p>Make sure you have the following dependencies installed on your system:</p>
+            <ul>
+                <li><a href="https://nodejs.org/" target="_blank" rel="nofollow noopener">Node.js</a></li>
+                <li><a href="http://gruntjs.com/using-the-cli" target="_blank" rel="nofollow noopener">grunt-cli</a>
+                </li>
+                <li>git</li>
+            </ul>
+            <h3 id="setup"><a aria-hidden="true" href="#setup"><span class="icon markdown-icon-link"></span></a>Setup
+            </h3>
+            <p>Clone this git repository:</p>
+            <pre><code class="hljs language-nginx"><span class="hljs-attribute">git</span> clone https://github.com/clientIO/joint.git
+</code></pre>
+            <p>Change into the joint directory:</p>
+            <pre><code class="hljs language-bash"><span class="hljs-built_in">cd</span> joint
+</code></pre>
+            <p>Install all NPM dependencies:</p>
+            <pre><code class="hljs language-nginx"><span class="hljs-attribute">npm</span> install
+</code></pre>
+            <p>Generate build files from the source code:</p>
+            <pre><code class="hljs language-nginx"><span class="hljs-attribute">grunt</span> install
+</code></pre>
+            <p>You are ready now to browse our demos:</p>
+            <pre><code class="hljs language-bash"><span class="hljs-built_in">cd</span> demo
+</code></pre>
+            <h3 id="tests"><a aria-hidden="true" href="#tests"><span class="icon markdown-icon-link"></span></a>Tests
+            </h3>
+            <p>To run all tests:</p>
+            <pre><code class="hljs language-bash">grunt <span class="hljs-built_in">test</span>
+</code></pre>
+            <p>To run only the server-side tests:</p>
+            <pre><code class="hljs language-bash">grunt <span class="hljs-built_in">test</span>:server
+</code></pre>
+            <p>To run only the client-side tests:</p>
+            <pre><code class="hljs language-bash">grunt <span class="hljs-built_in">test</span>:client
+</code></pre>
+            <p>To run code style checks:</p>
+            <pre><code class="hljs language-bash">grunt <span class="hljs-built_in">test</span>:code-style
+</code></pre>
+            <h3 id="code-coverage-reports"><a aria-hidden="true" href="#code-coverage-reports"><span
+                        class="icon markdown-icon-link"></span></a>Code Coverage Reports</h3>
+            <p>To output a code coverage report in HTML:</p>
+            <pre><code class="hljs language-bash">grunt <span class="hljs-built_in">test</span>:coverage
+</code></pre>
+            <p>To output a code coverage report in <a href="http://ltp.sourceforge.net/coverage/lcov/geninfo.1.php"
+                    target="_blank" rel="nofollow noopener">lcov format</a>:</p>
+            <pre><code class="hljs language-bash">grunt <span class="hljs-built_in">test</span>:coverage --reporter=<span class="hljs-string">"lcov"</span>
+</code></pre>
+            <p>The output for all unit tests will be saved in the <code>coverage</code> directory.</p>
+            <h3 id="building-distribution-files"><a aria-hidden="true" href="#building-distribution-files"><span
+                        class="icon markdown-icon-link"></span></a>Building Distribution Files</h3>
+            <p>The <code>dist</code> directory contains pre-built distribution files. To re-build them, run the
+                following:</p>
+            <pre><code class="hljs language-nginx"><span class="hljs-attribute">grunt</span> dist
+</code></pre>
+            <h2 id="documentation"><a aria-hidden="true" href="#documentation"><span
+                        class="icon markdown-icon-link"></span></a>Documentation</h2>
+            <p>The source for the JointJS documentation (plus geometry and Vectorizer libraries) are included in this
+                repository; see the <code>docs</code> directory. The documentation can be built into stand-alone HTML
+                documents like this:</p>
+            <pre><code class="hljs language-css"><span class="hljs-selector-tag">grunt</span> <span class="hljs-selector-tag">build</span><span class="hljs-selector-pseudo">:docs</span>
+</code></pre>
+            <p>The output of the above command can be found at <code>build/docs</code>.</p>
+            <h2 id="license"><a aria-hidden="true" href="#license"><span
+                        class="icon markdown-icon-link"></span></a>License</h2>
+            <p>JointJS library is licensed under the Mozilla Public License, v. 2.0. Please see the LICENSE file for the
+                full license.</p>
+            <p>Copyright (c) 2013 client IO</p>
+            <h2 id="contributors"><a aria-hidden="true" href="#contributors"><span
+                        class="icon markdown-icon-link"></span></a>Contributors</h2>
+            <ul>
+                <li><a href="https://github.com/DavidDurman" target="_blank" rel="nofollow noopener">David Durman</a>
+                </li>
+                <li><a href="https://github.com/kumilingus" target="_blank" rel="nofollow noopener">Roman Bruckner</a>
+                </li>
+                <li><a href="https://github.com/chill117" target="_blank" rel="nofollow noopener">Charles Hill</a></li>
+                <li><a href="https://github.com/vtalas" target="_blank" rel="nofollow noopener">Vladimir Talas</a></li>
+                <li><a href="https://github.com/zbynekstara" target="_blank" rel="nofollow noopener">Zbynek Stara</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="documentation__SideBar-yjd3zs-1 bgTbVD"><div class="documentation__ListContainer-yjd3zs-3 ldjFXX"><div class="documentation__JumpTo-yjd3zs-2 heKBvZ">Jump to</div><ul class="documentation__UlStyled-yjd3zs-4 jyRWgA"><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#features" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Features</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#supported-browsers" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Supported browsers</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#development-environment" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Development Environment</a><ul class="documentation__UlStyled-yjd3zs-4 jyRWgA"><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#dependencies" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Dependencies</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#setup" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Setup</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#tests" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Tests</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#code-coverage-reports" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Code Coverage Reports</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#building-distribution-files" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Building Distribution Files</a></li></ul></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#documentation" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Documentation</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#license" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">License</a></li><li class="documentation__LiStyled-yjd3zs-5 hVMlfB"><a id="#contributors" class="documentation__LinkStyled-yjd3zs-6 eZRkqC tocLink">Contributors</a></li></ul></div></div>

@@ -1,393 +1,590 @@
-@media (min-width: 1250px) {
-    .container {
-        max-width: 1200px;
-    }
-
-    .how-it-works h1,
-    .how-it-works p {
-        max-width: 549px;
-    }
-
-    form {
-        max-width: 400px;
-    }
-
-    .features-container {
-        flex-direction: row;
-    }
-
-    .how-it-works-video {
-        width: 537px;
-        height: 327px;
-    }
-
-    .features p {
-        width: 245px;
-    }
-
-    .features-container {
-        padding: 212px 0 212px 0;
-    }
-
-    #plan {
-        width: 33%;
-        height: 368px;
-        padding: 32px 32px 32px 32px;
-    }
+body{
+    background-color:rgb(32, 32, 32);
 }
 
-@media (max-width: 1250px) {
-
-    .how-it-works h1,
-    .how-it-works p {
-        width: 430px;
-    }
-
-    form {
-        width: 400px;
-    }
-
-    .features-container {
-        flex-direction: row;
-    }
-
-    .how-it-works-video {
-        width: 537px;
-    }
-
-    .features p {
-        width: 245px;
-    }
-
-    .features-container {
-        padding: 212px 0 212px 0;
-    }
-
-    #plan {
-        width: 33%;
-        height: 368px;
-        padding: 32px 32px 32px 32px;
-    }
+*,
+:before,
+:after {
+    box-sizing: inherit;
 }
 
-@media (max-width: 1080px) {
-    .container {
-        max-width: 700px;
-    }
-
-    .how-it-works h1,
-    .how-it-works p {
-        text-align: center;
-        width: 100%;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .how-it-works-video {
-        margin: 64px auto 0 auto;
-        width: 100%;
-        height: 360px;
-    }
-
-    .features-container {
-        text-align: center;
-        flex-direction: column;
-        padding: 0 0 64px 0;
-    }
-
-    .features {
-        height: 750px;
-    }
-
-    .features p {
-        width: auto;
-    }
-
-    #feature {
-        margin-top: 64px;
-    }
-
-    .vl {
-        display: none;
-    }
-
-    .plans-container {
-        flex-direction: column;
-    }
-
-    #plan-content {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #plan-content ul {
-        text-align: center;
-    }
-
-    #plan {
-        height: auto;
-        padding: 32px 0 32px 0;
-        width: 100%;
-    }
-
-    #plan button {
-        margin-top: 36px;
-    }
-
-    .mobile-hl {
-        height: 1px;
-        width: 100%;
-        background-color: #e4e8ed;
-    }
-}
-
-body {
-    margin: 0px 0px 0px 0px;
-    font-family: "Segoe UI", "SF Pro Display", "Helvetica Neue", "Helvetica",
-        "Arial", sans-serif;
-}
-
-header {
-    background-color: rgba(255, 255, 255, 0.2);
-    position: fixed;
-    height: 35px;
-    padding-top: 13px;
-    width: 100%;
-    backdrop-filter: blur(5px);
-}
-
-nav>ul {
-    font-size: 14px;
+.exbjwQ {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    float: right;
-}
-
-ul {
+    flex-direction: column;
+    margin: 0px auto 0px 400px;
+    max-width: 100%;
     margin-top: 0px;
-    list-style-type: none;
-}
-
-li {
-    color: #5c5c5c;
-    margin-left: 50px;
-}
-
-nav {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.logo {
-    margin-top: 3px;
-    position: absolute;
-}
-
-form {
-    height: 44px;
-    display: flex;
-    flex-direction: row;
-    border: solid #d3d8e0 1px;
-    margin-bottom: 0px;
-    border-radius: 8px;
-    padding: 2px;
-}
-
-a {
-    color: #5c5c5c;
-    text-decoration: none;
-}
-
-h1 {
-    color: #111111;
-    margin: 0 0 0 0;
-    font-weight: 600;
-    font-size: 32px;
-}
-
-h3 {
-    color: #111111;
-    margin: 0 0 0 0;
-    font-weight: 600;
-    font-size: 26px;
-}
-
-footer {
-    width: 100%;
-    height: 50px;
-    padding: 30px 0px 0px 0px;
-}
-
-p {
-    font-size: 18px;
-}
-
-h4 {
-    color: #111111;
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 0 0 0;
-}
-
-button {
-    width: 100%;
-    float: inline-end;
-    border: none;
-    border-radius: 6px;
-    height: 38px;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-p,
-::placeholder {
-    color: #585d66;
-}
-
-button:hover,
-input[type="submit"]:hover {
-    cursor: pointer;
-}
-
-input[type="email"] {
-    padding-left: 20px;
-    flex-grow: 2;
-    border: none;
-    border-radius: 8px;
-}
-
-input[type="submit"] {
-    width: 101px;
-    height: 44px;
-    background: #111111;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 2px 0px 0px 0;
-}
-
-input[type="email"]:focus {
-    outline: none;
-}
-
-footer li {
-    color: #111111;
-}
-
-.container {
-    padding: 0 25px 0 25px;
-    margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: 400px;
 }
 
-.how-it-works {
-    padding-top: 248px;
-    padding-bottom: 298px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.how-it-works-video iframe {
-    width: 100%;
-    height: 100%;
-}
-
-.how-it-works-video {
+.MViXT {
+    box-sizing: content-box;
+    max-width: 1833px;
+    width: calc(100% - 80px);
+    padding-top: 192px;
+    padding-bottom: 40px;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
     margin-left: auto;
 }
 
-.how-it-works p {
-    margin-top: 64px;
-    margin-bottom: 64px;
-    letter-spacing: 0.01em;
+.buCCYi {
+    width: calc(100% - 40px);
+    padding-left: 0px;
+    padding-right: 40px;
 }
 
-.features {
-    background-color: #f9f5ff;
-    width: 100%;
-    height: auto;
+.ihOFQB {
+    flex: 1 0 0px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0px;
 }
 
-.features p {
-    color: #111111;
-}
-
-.features-container {
+.knTjcg {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 68px;
 }
 
-.pricing {
-    margin-top: 212px;
-}
-
-.pricing h1 {
-    text-align: center;
-    margin-bottom: 64px;
-}
-
-.hl {
-    height: 1px;
-    width: 100%;
-    background-color: #e4e8ed;
-}
-
-.plans-container {
-    display: flex;
-}
-
-.vl {
-    width: 1px;
-    height: 399px;
-    background-color: #e4e8ed;
-}
-
-.white-button {
-    background-color: white;
-    color: #111111;
-    border: solid #e4e8ed 1px;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05);
-}
-
-.black-button {
-    background-color: #111111;
-    color: white;
-}
-
-#plan p {
-    margin-bottom: 36px;
-}
-
-#plan h1 {
-    text-align: left;
-    margin-bottom: 0;
-}
-
-#plan li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     margin-left: 0px;
-    color: #111111;
-    font-size: 18px;
-}
-
-#plan ul {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     padding-left: 0px;
 }
 
-#starter-button {
-    margin-top: 56px;
+body {
+    margin: 0px;
+    color: rgb(146, 171, 207);
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
 
-#standard-button {
-    margin-top: 80px;
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgb(4, 6, 9);
 }
 
-#premium-button {
-    margin-top: 80px;
+.bEuoNZ {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px;
+    padding: 40px;
+    background-color: rgb(15, 23, 36);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.hCEzKD {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.hCEzKD .markdown-body {
+    text-size-adjust: 100%;
+    color: rgb(36, 41, 46);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+.hCEzKD .markdown-body {
+    margin-top: -10px;
+    padding: 16px;
+    background: transparent;
+    color: rgb(146, 171, 207);
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+}
+
+.hCEzKD .markdown-body:after,
+.hCEzKD .markdown-body:before {
+    display: table;
+    content: "";
+}
+
+.hCEzKD .markdown-body:after {
+    clear: both;
+}
+
+.hCEzKD .markdown-body * {
+    box-sizing: border-box;
+}
+
+.hCEzKD .markdown-body h1 {
+    font-size: 2em;
+    margin: 0.67em 0px;
+    margin-top: 0.67em;
+    margin-right: 0px;
+    margin-bottom: 0.67em;
+    margin-left: 0px;
+}
+
+.hCEzKD .markdown-body h1,
+.hCEzKD .markdown-body h2,
+.hCEzKD .markdown-body h3,
+.hCEzKD .markdown-body h4,
+.hCEzKD .markdown-body h5,
+.hCEzKD .markdown-body h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hCEzKD .markdown-body h1 {
+    font-size: 32px;
+}
+
+.hCEzKD .markdown-body h1,
+.hCEzKD .markdown-body h2 {
+    font-weight: 600;
+}
+
+.hCEzKD .markdown-body h1,
+.hCEzKD .markdown-body h2,
+.hCEzKD .markdown-body h3,
+.hCEzKD .markdown-body h4,
+.hCEzKD .markdown-body h5,
+.hCEzKD .markdown-body h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.hCEzKD .markdown-body h1 {
+    font-size: 2em;
+}
+
+.hCEzKD .markdown-body h1,
+.hCEzKD .markdown-body h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid rgb(234, 236, 239);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(234, 236, 239);
+}
+
+.hCEzKD .markdown-body h1,
+.hCEzKD .markdown-body h2 {
+    padding-bottom: 0px;
+    border-bottom: none;
+    padding-top: 1em;
+    border-top: 1px solid rgb(59, 80, 109);
+    border-bottom-width: initial;
+    border-bottom-style: none;
+    border-bottom-color: initial;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(59, 80, 109);
+}
+
+.hCEzKD .markdown-body> :first-child {
+    margin-top: 0px !important;
+}
+
+.hCEzKD .markdown-body h1:first-of-type,
+.hCEzKD .markdown-body h2:first-of-type {
+    border-top: none;
+    margin-top: 0px;
+    padding-top: 10px;
+    border-top-width: initial;
+    border-top-style: none;
+    border-top-color: initial;
+}
+
+.hCEzKD .markdown-body p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.hCEzKD .markdown-body blockquote,
+.hCEzKD .markdown-body details,
+.hCEzKD .markdown-body dl,
+.hCEzKD .markdown-body ol,
+.hCEzKD .markdown-body p,
+.hCEzKD .markdown-body pre,
+.hCEzKD .markdown-body table,
+.hCEzKD .markdown-body ul {
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.hCEzKD .markdown-body h2 {
+    font-size: 24px;
+}
+
+.hCEzKD .markdown-body h2 {
+    font-size: 1.5em;
+}
+
+ol,
+ul {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+
+.hCEzKD .markdown-body ol,
+.hCEzKD .markdown-body ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hCEzKD .markdown-body ol,
+.hCEzKD .markdown-body ul {
+    padding-left: 2em;
+}
+
+.hCEzKD .markdown-body ul {
+    list-style-type: disc;
+}
+
+.hCEzKD .markdown-body h3 {
+    font-size: 20px;
+}
+
+.hCEzKD .markdown-body h3,
+.hCEzKD .markdown-body h4 {
+    font-weight: 600;
+}
+
+.hCEzKD .markdown-body h3 {
+    font-size: 1.25em;
+}
+
+.hCEzKD pre {}
+
+.hCEzKD .markdown-body code,
+.hCEzKD .markdown-body kbd,
+.hCEzKD .markdown-body pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.hCEzKD .markdown-body code,
+.hCEzKD .markdown-body pre {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 12px;
+}
+
+.hCEzKD .markdown-body pre {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hCEzKD .markdown-body pre {
+    overflow-wrap: normal;
+}
+
+pre,
+.hCEzKD .markdown-body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: rgb(246, 248, 250);
+    border-radius: 3px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+pre,
+.hCEzKD .markdown-body pre {
+    background-color: rgb(9, 7, 5);
+}
+
+.hCEzKD .markdown-body code,
+.hCEzKD .markdown-body kbd,
+.hCEzKD .markdown-body pre,
+.hCEzKD .markdown-body .commit-tease-sha,
+.hCEzKD .markdown-body .blob-num,
+.hCEzKD .markdown-body .blob-code-inner {
+    font-family: "DM Mono", Consolas, "Courier New", monospace;
+}
+
+.hCEzKD .markdown-body> :last-child {
+    margin-bottom: 0px !important;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(198, 211, 231);
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+.hCEzKD .markdown-body a {
+    background-color: initial;
+}
+
+.hCEzKD .markdown-body a {
+    color: rgb(3, 102, 214);
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+.hCEzKD .markdown-body a {
+    color: rgb(252, 153, 41);
+}
+
+.hCEzKD .markdown-body a {
+    color: rgb(17, 236, 229);
+}
+
+.hCEzKD .markdown-body li {}
+
+.hCEzKD .markdown-body li+li {
+    margin-top: 0.25em;
+}
+
+.hCEzKD .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: rgb(7, 13, 23);
+    color: rgb(221, 235, 255);
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(7, 13, 23);
+}
+
+.hCEzKD .markdown-body code {
+    padding: 0.2em 0.4em;
+    margin: 0px;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+    padding-top: 0.2em;
+    padding-right: 0.4em;
+    padding-bottom: 0.2em;
+    padding-left: 0.4em;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.hCEzKD .markdown-body code {
+    background-color: rgba(228, 224, 220, 0.05);
+}
+
+.hCEzKD .markdown-body pre>code {
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.hCEzKD .markdown-body pre code {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    overflow: visible;
+    line-height: inherit;
+    overflow-wrap: normal;
+    background-color: initial;
+    border: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.hCEzKD .markdown-body pre code {
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hCEzKD .markdown-body img {
+    border-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+.hCEzKD .markdown-body img {
+    max-width: 100%;
+    box-sizing: initial;
+    background-color: rgb(255, 255, 255);
+}
+
+.hCEzKD .markdown-body img {
+    background-color: transparent;
+    filter: brightness(0.3) contrast(0.8) brightness(2.5);
+}
+
+.hCEzKD .hljs-attr,
+.hCEzKD .hljs-attribute,
+.hCEzKD .hljs-builtin-name {
+    color: rgb(156, 220, 254);
+}
+
+.hCEzKD .hljs-built_in,
+.hCEzKD .hljs-type {
+    color: rgb(78, 201, 176);
+}
+
+.hCEzKD .hljs-string,
+.hCEzKD .hljs-meta-string {
+    color: rgb(214, 157, 133);
+}
+
+.hCEzKD .hljs-string,
+.hCEzKD .hljs-meta-string {
+    color: rgb(17, 236, 229);
+}
+
+.hCEzKD .hljs-bullet,
+.hCEzKD .hljs-selector-tag,
+.hCEzKD .hljs-selector-id,
+.hCEzKD .hljs-selector-class,
+.hCEzKD .hljs-selector-attr,
+.hCEzKD .hljs-selector-pseudo {
+    color: rgb(215, 186, 125);
 }
